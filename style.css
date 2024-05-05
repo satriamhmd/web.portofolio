@@ -1,0 +1,236 @@
+/* CSS untuk Hero Section */
+/* CSS Custom */
+body {
+    font-family: 'Merriweather', serif; /* Gunakan font serif dari Google Fonts untuk seluruh body */
+}
+
+/* Aturan untuk mengatur font Poppins pada setiap header */
+a, p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Gunakan font Poppins untuk setiap header */
+}
+
+/* Aturan untuk mengatur ukuran font Poppins pada setiap header */
+h1 {
+    font-size: 32px; /* Ukuran font untuk h1 */
+}
+
+h2 {
+    font-size: 28px; /* Ukuran font untuk h2 */
+}
+
+h3 {
+    font-size: 24px; /* Ukuran font untuk h3 */
+}
+
+h4 {
+    font-size: 20px; /* Ukuran font untuk h4 */
+}
+
+h5 {
+    font-size: 18px; /* Ukuran font untuk h5 */
+}
+
+h6 {
+    font-size: 16px; /* Ukuran font untuk h6 */
+}
+a {
+    font-size: 20px; /* Ukuran font untuk h6 */
+}
+p {
+    font-size: 12px; /* Ukuran font untuk h6 */
+}
+
+
+.navbar {
+    background-color: #0f5132;
+}
+
+
+
+.deskripsi {
+    background-color: #0f5132;
+    padding: 100px; /* Tambahkan padding yang lebih besar untuk memperbesar latar belakang */
+    margin-bottom: 40px; /* Hapus margin bawah untuk menghilangkan ruang tambahan */
+}
+
+.description-img {
+    padding: 50px;
+    padding-right: 10px;
+    margin-right: 10px; /* Kurangi margin kanan untuk mendekatkan gambar dengan konten */
+}
+
+
+.description-content {
+    margin-bottom: 0; /* Hapus margin bawah untuk menghilangkan ruang tambahan */
+}
+
+
+
+.hero {
+    display:inline-flex
+  }
+  
+  .hero-content {
+   
+    padding: 200px; /* Atur padding sesuai kebutuhan */
+  }
+  
+  .hero-img {
+    /* Ganti 'gambar.jpg' dengan URL gambar Anda */
+    background-size: cover;
+  }
+  
+  
+
+.hero-content {
+    text-align: center; /* Pusatkan teks */
+}
+
+.hero-img {
+    text-align: center; /* Pusatkan gambar */
+}
+
+.hero-img img {
+    max-width: 100%; /* Pastikan gambar tidak melebihi lebar hero section */
+}
+
+/* Custom CSS */
+.grey-bg {
+    padding: 50px 0; /* Tambahkan padding atas dan bawah untuk meninggikan bagian portofolio */
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    margin: 10px; /* Tambahkan margin antara setiap item portofolio */
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Lebar overlay mengikuti lebar parent */
+    height: 100px; /* Tinggi overlay yang diinginkan */
+    background-color: white; /* Warna putih */
+    opacity: 0.5; /* Opacity untuk transparansi */
+  }
+  
+
+
+
+
+.description {
+    display: flex;
+    align-items: center;
+}
+
+.description-img {
+    flex: 1;
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+.description-content {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .description {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .description-img {
+        margin-right: 0;
+        margin-bottom: 20px; /* Jarak antara gambar dan teks pada mode mobile */
+    }
+}
+
+
+.description-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang dengan transparansi */
+    transition: opacity 0.3s ease; /* Efek transisi ketika hover */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container:hover {
+    opacity: 0; /* Atur opasitas menjadi 0 saat hover */
+}
+
+.contact-section {
+    background-color: #0f5132;
+    padding: 50px 0; /* Atur padding atas dan bawah sesuai kebutuhan */
+  }
+
+  .social-icons a {
+    color: #fff; /* Atur warna ikon menjadi putih */
+    margin-right: 10px; /* Atur jarak antara ikon */
+    font-size: 24px; /* Atur ukuran ikon */
+  }
+
+
+
+
+
+/* Aturan Media untuk Layar Ponsel */
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 100px 20px; /* Ubah padding untuk ruang di sekitar konten pada layar ponsel */
+    }
+
+    .hero-img {
+        display: none; /* Sembunyikan gambar pada layar ponsel */
+    }
+
+    .description-img {
+        padding: 20px; /* Sesuaikan padding gambar pada layar ponsel */
+        margin-right: 0; /* Hapus margin kanan pada layar ponsel */
+    }
+
+    .description-content {
+        padding: 0 20px; /* Sesuaikan padding teks pada layar ponsel */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Tampilkan menu navbar dalam satu kolom pada layar ponsel */
+    }
+
+    .social-icons a {
+        margin-right: 5px; /* Sesuaikan jarak antara ikon pada layar ponsel */
+    }
+}
+
+
+/* Aturan Media untuk Layar Tablet */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 100px 50px; /* Sesuaikan padding konten pada layar tablet */
+    }
+
+    .description-content {
+        padding: 0 50px; /* Sesuaikan padding teks pada layar tablet */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Tampilkan menu navbar dalam satu kolom pada layar tablet */
+    }
+}

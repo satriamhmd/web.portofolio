@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tautan CDN untuk Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- Data Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow fixed-top" style="background-color: #0f5231">
+      <div class="container">
+        <a class="navbar-brand text-light">Satria</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#portofolio">Portofolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <div class="container-fluid"> -->
+    <!-- Hero Section -->
+    <!-- <div class="row fixed-" id="home">
+        <section class="hero">
+          <div class="hero-content text-lg-start" >
+            <h3>Hello, My name is</h3>
+            <h1>Muhammad Satria</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div  class="btn text-light" style="background-color: #0f5132;">Halo buka</div>
+          </div> -->
+    <!-- <div class="hero-img" > -->
+    <!-- Gambar sebagai latar belakang -->
+    <!-- <img src="home.png" alt="Gambar" style="border-radius: 50%;">
+          </div>
+ 
+        </section>
+      </div>
+       -->
+
+    <!-- Hero section -->
+    <section class="row g-8" id="home">
+      <div class="row g-2">
+        <div class="col-sm-6 col-md-6">
+          <div class="hero-content text-lg-start">
+            <h3>Hello, My name is</h3>
+            <h1>Muhammad Satria</h1>
+            <p>I'm a UI Developer</p>
+            <a href="https://drive.google.com/file/d/1DlTzehyrOTSBt7cNz14XD-wUoy7lnQe5/view?usp=sharing">
+              <div class="btn text-light" style="background-color: #0f5132">Dawnload CV</div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="center-image" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+            <!-- Gambar sebagai latar belakang -->
+            <img src="home.png" alt="Gambar" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Hero -->
+
+    <!-- About Section -->
+    <div class="row justify-content-center deskripsi" id="about">
+      <section class="description align-items-center">
+        <div class="col-md-6 description-img" style="margin-right: 10px">
+          <!-- Mengubah margin menjadi 10px -->
+          <img src="about.png" alt="Description Image" style="max-width: 500px; border-radius: 10px" />
+        </div>
+        <div class="col-md-3 description-content">
+          <h1 class="text-light">About Me</h1>
+          <p class="text-light text-start">
+            Mahasiswa Teknologi Informasi dengan pengalaman organisasi di bidang media informasi dan pengalaman bekerja di kedai kopi di bidang social media design dan barista. Memiliki kemampuan membuat desain produk, poster, periklanan,
+            ilustrasi, fotografi, dan menguasai beberapa software desain. Memiliki keinginan untuk mengembangkan keterampilan di bidang desain grafis di industri kreatif.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="row grey-bg">
+      <section class="col-md-12" id="portofolio">
+        <h2 class="text-center">Portfolio</h2>
+        <p class="text-center">Here you can showcase your work.</p>
+        <div class="row justify-content-center p-3">
+          <div class="col-md-2">
+            <img src="Artboard 1.png" alt="Project 1" class="img-fluid p-6" />
+          </div>
+          <div class="col-md-2">
+            <img src="Artboard 2.png" alt="Project 2" class="img-fluid p-6" />
+          </div>
+          <div class="col-md-2">
+            <img src="Artboard 3.png" alt="Project 3" class="img-fluid p-6" />
+          </div>
+        </div>
+
+        <div class="row justify-content-center p-3">
+          <div class="col-md-2">
+            <img src="Artboard 4.png" alt="Project 1" class="img-fluid p-6" />
+          </div>
+          <div class="col-md-2">
+            <img src="Artboard 5.png" alt="Project 2" class="img-fluid p-6" />
+          </div>
+          <div class="col-md-2">
+            <img src="Artboard 6.png" alt="Project 3" class="img-fluid p-6" />
+          </div>
+        </div>
+        <div class="row justify-content-center p-3">
+          <div class="col-md-2">
+            <img src="Artboard 7.png" alt="Project 1" class="img-fluid p-6" />
+          </div>
+          <div class="col-md-2">
+            <img src="Artboard 8.png" alt="Project 2" class="img-fluid p-6" />
+          </div>
+          <div class="col-md-2">
+            <img src="Artboard 9.png" alt="Project 3" class="img-fluid p-6" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+      <section class="col-md-12">
+        <h2 class="text-center text-light">Contact</h2>
+        <p class="text-center text-light">You can reach out to us through the following means:</p>
+        <div class="social-icons text-center">
+          <a href="https://www.instagram.com/muhamadssatria?igsh=MTdlZTNmcTFxeHBjZQ%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+          <a href="http://www.linkedin.com/in/muhamadssatria"><i class="bi bi-linkedin"></i></a>
+          <a href="http://muhamadssatria@gmail.com"><i class="bi bi-envelope"></i></a>
+
+          <!-- Tambahkan ikon-ikon lainnya sesuai kebutuhan -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Tautan CDN untuk Bootstrap JavaScript -->
+    <!-- Tautan CDN untuk Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-xWZ3pVuX8rCThbozFvEpx4K/7js9Zus8kfuoExYmCpaeS8yOLtFC7lrGPfYU0UK9" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-/mEdE0Lgz3ZTH5nDiVjbb6npt3l/bJV14NuvlvpHrm+1Yn5hOzV2QrF/YGzvuhpE" crossorigin="anonymous"></script>
+    <!-- Script untuk mengubah warna latar belakang tombol navigasi -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+
+        navbarToggler.addEventListener('click', function () {
+          navbarToggler.style.backgroundColor = 'black';
+        });
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
